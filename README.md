@@ -1,5 +1,8 @@
 # README
 
+- bundle
+- rails db:create db:migrate db:seed
+
 ##Historia 1:
 
 Yo como visita ingreso al registro de usuarios y en el formulario de registro, debo escribir mi nombre, email, password, número telefónico y subir una fotografía.
