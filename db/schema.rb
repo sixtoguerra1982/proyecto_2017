@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 20171031033213) do
     t.string "name"
     t.text "description"
     t.string "picture"
-    t.float "price"
+    t.integer "price"
     t.bigint "cook_id"
     t.date "date"
     t.datetime "created_at", null: false
