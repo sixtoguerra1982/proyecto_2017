@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.destroy_all
+Menu.destroy_all
 Cook.destroy_all
 
 User.create(
@@ -56,3 +57,19 @@ Cook.create(
   biography: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
   vedent, sunt in culpa qui officia deserunt mollit anim id est laborum.'
 )
+
+
+
+3.times do |x|
+  4.times do |i|
+    Menu.create(
+      name:Faker::Food.dish,
+      description: Faker::Food.ingredient,
+      price:Faker::Commerce.price.to_i * 100,
+      # picture: "http://lorempixel.com/400/200/food/#{i + 1}/",
+      picture: "default_menu.png",
+      cook_id: x + 1,
+      date: Time.now
+    )
+  end
+end

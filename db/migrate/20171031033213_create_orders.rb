@@ -6,7 +6,6 @@ class CreateOrders < ActiveRecord::Migration[5.1]
       t.text :request_description
       t.boolean :payed, default: false
       t.datetime :date
-
       t.timestamps
     end
   end

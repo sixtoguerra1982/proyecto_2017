@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 20171031033213) do
     t.string "picture"
     t.float "price"
     t.bigint "cook_id"
+    t.date "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["cook_id"], name: "index_menus_on_cook_id"

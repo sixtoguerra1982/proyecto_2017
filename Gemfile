@@ -5,6 +5,12 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+#gema carrierwave
+gem 'carrierwave', '~> 1.0'
+
+# gema feaker
+gem 'faker'
+
 # Bootstrap 4 beta
 gem 'bootstrap', '~> 4.0.0.beta2.1'
 # jquery
