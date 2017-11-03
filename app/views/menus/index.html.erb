@@ -23,7 +23,7 @@
         <td><%= menu.description %></td>
         <td>
           <a href="<%= menu_path(menu) %>">
-            <%= image_tag menu.picture, with: "120", height: "120" %>
+            <%= image_tag menu.picture.thumb ,class:"menu-img" %>
           </a>
         </td>
         <td><%= menu.price %></td>
