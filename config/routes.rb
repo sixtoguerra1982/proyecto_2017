@@ -15,7 +15,7 @@ devise_for :users, controllers: {
  get 'cooks/index'
  root to: 'cooks#index'
 
- 
+ get 'cooks/:id/menu_show', to: 'cooks#menu_show', as:'menu_show'	 
 
 
  
