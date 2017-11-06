@@ -14,6 +14,7 @@ class MenusController < ApplicationController
   # GET /menus/new
   def new
     @menu = Menu.new
+    @cook = Cook.find(1)
   end
 
   # GET /menus/1/edit

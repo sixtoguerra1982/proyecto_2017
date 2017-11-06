@@ -1,4 +1,5 @@
 <%= form_with(model: menu, local: true) do |form| %>
+
   <% if menu.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(menu.errors.count, "error") %> prohibited this menu from being saved:</h2>
@@ -10,6 +11,17 @@
       </ul>
     </div>
   <% end %>
+
+ <h3>Nombre de cocinero: <%= @cook.name %></h3>
+  <h3> Menus:</h3>
+  <ul>
+    <% @cook.menus.each do |menu| %>
+      <li>
+        <%= menu.name %>
+      </li>
+    <% end %>
+  </ul>
+
 
   <div class="field">
     <%= form.label :name, "Nombre del plato" %>

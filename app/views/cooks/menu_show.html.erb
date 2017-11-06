@@ -4,19 +4,18 @@
 <h1 class="jumbotron"><%= @cook.name %></h1>
 
 
-
-<section class="">
 	<div class="row">
 		<div class="col">
-			<%= image_tag @cook.picture, class: 'card-img-top img-fluid' %>
-			<div class="card">
-			  <div class="card-body">
-			    <h4 class="card-title"><%= @cook.name%></h4>
-			    <p class="card-text"><%= @cook.biography %></p>
-			    <p> <%= @cook.address_commune %></p>
-			    <p> <%= @cook.address_region %></p>
-			  </div>
-			</div>
+			<section class="cook">
+				<%= image_tag @cook.picture, size:"32X32", class: 'card-img-top img-fluid' %>
+				<div class="card cook">
+				  <div class="card-body">
+				    <h4 class="card-title"><%= @cook.name%></h4>
+				    <p class="card-text"><%= @cook.biography %></p>
+				    <p> <%= @cook.address_commune %></p>
+				    <p> <%= @cook.address_region %></p>
+				  </div>
+			</section>
 		</div>
 		<div class="col">
 				<section class="menus">
@@ -26,7 +25,7 @@
 								<div class="col">
 									<div class="card-deck"">
 										<div class="card">
-											<%= image_tag menu.picture, class: 'card-img-top img-fluid menu-img' %>
+											<%= image_tag menu.picture.thumb, class: 'card-img-top img-fluid' %>
 											<div class="card-body">
 											<h5><%= menu.name %></h5>
 											<p><%= "$ " + menu.price.to_s %><p>
@@ -43,7 +42,6 @@
 				</section>
 		</div>
 	</div>	
-</section>
 
 
 
