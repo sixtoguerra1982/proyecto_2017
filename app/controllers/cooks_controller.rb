@@ -1,5 +1,5 @@
-class CooksController < ApplicationController
-
+#!/usr/bin/env ruby -wKUclass CooksController < ApplicationController
+#!/usr/bin/env ruby -wKU
   def index
     @cooks = Cook.all
   end
