@@ -10,7 +10,6 @@ class CreateCooks < ActiveRecord::Migration[5.1]
       t.string :address_city
       t.string :picture
       t.text :biography
-
       t.timestamps
     end
   end
