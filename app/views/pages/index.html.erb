@@ -19,20 +19,23 @@
 
 <!-- Cards -->
 <section class="container mt-5">
-  <div class="card-deck">
+  <div class="row">
     <% @cooks.each do |cook| %>
-    <div class="card">
-      <%= image_tag cook.picture, class: 'card-img-top' %>
-      <div class="card-body">
-        <h4 class="card-title"><%= cook.name%></h4>
-        <p class="card-text"><%= cook.biography %></p>
-        <p> <%= cook.address_commune %></p>
-        <p> <%= cook.address_region %></p>
-        <%= link_to("Ver menú", menu_show_path(cook), class:"btn btn-outline-primary" ) %>
+    <div class="col-md-4">
+      <div class="card mt-3">
+        <%= image_tag cook.picture, class: 'card-img-top img-fluid' %>
+        <div class="card-body">
+          <h4 class="card-title"><%= cook.name%></h4>
+          <p class="card-text"><%= cook.biography %></p>
+          <p> <%= cook.address_commune %></p>
+          <p> <%= cook.address_region %></p>
+        </div>
+        <div class="card-footer d-flex flex-row justify-content-center">
+          <%= link_to("ver Menu", menu_show_path(cook), class:"btn btn-outline-primary mr-2" ) %>
+        </div>
       </div>
     </div>
     <% end %>
   </div>
 </section>
 <!-- Fin Cards -->
-

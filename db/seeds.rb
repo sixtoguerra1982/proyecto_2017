@@ -58,6 +58,44 @@ Cook.create(
   vedent, sunt in culpa qui officia deserunt mollit anim id est laborum.'
 )
 
+Cook.create(
+  name: 'cocinero 04',
+  email: 'cook03@gmail.com',
+  phone: '+56 9 89890098',
+  address: 'Dirección 567, Maipú',
+  address_region: 'Región Metropolitana',
+  address_commune: 'Maipú',
+  address_city: 'Santiago',
+  picture: 'image-03',
+  biography: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+  vedent, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+)
+
+Cook.create(
+  name: 'cocinero 05',
+  email: 'cook03@gmail.com',
+  phone: '+56 9 89890098',
+  address: 'Dirección 567, Maipú',
+  address_region: 'Región Metropolitana',
+  address_commune: 'Maipú',
+  address_city: 'Santiago',
+  picture: 'image-03',
+  biography: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+  vedent, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+)
+
+Cook.create(
+  name: 'cocinero 06',
+  email: 'cook03@gmail.com',
+  phone: '+56 9 89890098',
+  address: 'Dirección 567, Maipú',
+  address_region: 'Región Metropolitana',
+  address_commune: 'Maipú',
+  address_city: 'Santiago',
+  picture: 'image-03',
+  biography: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+  vedent, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+)
 
 
 3.times do |x|
