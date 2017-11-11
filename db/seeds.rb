@@ -10,14 +10,34 @@ User.destroy_all
 Menu.destroy_all
 Cook.destroy_all
 
-User.create(
-  name: 'usuario 01',
-  email: 'user01@gmail.com',
-  password: 'hola1234',
-  password_confirmation: 'hola1234',
-  phone: '+56 9 12345678',
-  picture: 'image-04.png'
-)
+
+  User.create(
+    name: 'usuario1',
+    email: 'user1@gmail.com',
+    password: 'hola1234',
+    password_confirmation: 'hola1234',
+    phone: '+56 9 12345678',
+    picture: 'image-04.png'
+  )
+
+  User.create(
+    name: 'usuario1',
+    email: 'user2@gmail.com',
+    password: 'hola1234',
+    password_confirmation: 'hola1234',
+    phone: '+56 9 12345678',
+    picture: 'image-04.png'
+  )
+
+  User.create(
+    name: 'usuario1',
+    email: 'user3@gmail.com',
+    password: 'hola1234',
+    password_confirmation: 'hola1234',
+    phone: '+56 9 12345678',
+    picture: 'image-04.png'
+  )
+
 
 Cook.create(
   name: 'cocinero 01',
@@ -29,7 +49,8 @@ Cook.create(
   address_city: 'Santiago',
   picture: 'image-01',
   biography: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-  vedent, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+  vedent, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+  user_id: 3
 )
 
 Cook.create(
@@ -42,7 +63,8 @@ Cook.create(
   address_city: 'Santiago',
   picture: 'image-02',
   biography: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-  vedent, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+  vedent, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+  user_id: 2
 )
 
 Cook.create(
@@ -55,7 +77,8 @@ Cook.create(
   address_city: 'Santiago',
   picture: 'image-03',
   biography: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-  vedent, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+  vedent, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+  user_id: 3
 )
 
 Cook.create(
@@ -68,7 +91,8 @@ Cook.create(
   address_city: 'Santiago',
   picture: 'image-03',
   biography: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-  vedent, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+  vedent, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+  user_id: 2
 )
 
 Cook.create(
@@ -81,7 +105,8 @@ Cook.create(
   address_city: 'Santiago',
   picture: 'image-03',
   biography: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-  vedent, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+  vedent, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+  user_id: 3
 )
 
 Cook.create(
@@ -94,7 +119,8 @@ Cook.create(
   address_city: 'Santiago',
   picture: 'image-03',
   biography: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-  vedent, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+  vedent, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+  user_id: 2
 )
 
 

@@ -6,6 +6,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   mount_uploader :picture, AvatarUploader
+  has_many :cooks
 
   	
 end

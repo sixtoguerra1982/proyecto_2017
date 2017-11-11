@@ -1,3 +1,4 @@
 class Cook < ApplicationRecord
-	has_many :menus
+ belongs_to :user
+ has_many :menus
 end
