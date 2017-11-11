@@ -1,6 +1,4 @@
-#!/usr/bin/env ruby -wKUclass CooksController < ApplicationController
-#!/usr/bin/env ruby -wKU
- 
+
 class CooksController < ApplicationController
 	  
 	  def menu_show

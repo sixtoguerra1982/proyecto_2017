@@ -5,123 +5,56 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
-User.destroy_all
 Menu.destroy_all
 Cook.destroy_all
+User.destroy_all
 
 
-  User.create(
-    name: 'usuario1',
-    email: 'user1@gmail.com',
-    password: 'hola1234',
-    password_confirmation: 'hola1234',
-    phone: '+56 9 12345678',
-    picture: 'image-04.png'
-  )
 
-  User.create(
-    name: 'usuario1',
-    email: 'user2@gmail.com',
-    password: 'hola1234',
-    password_confirmation: 'hola1234',
-    phone: '+56 9 12345678',
-    picture: 'image-04.png'
-  )
+10.times do |i|
+    if i + 1 < 6
+      User.create(
+      name: "usuario00#{i + 1}",
+      email: "usuario01#{i + 1}@gmail.com",
+      password: 'hola1234',
+      password_confirmation: 'hola1234',
+      phone: '+56 9 12345678',
+      picture: 'default_user.png',
+      cook: true
+      )
+    else
+      User.create(
+      name: "usuario00#{i + 1}",
+      email: "usuario01#{i + 1}@gmail.com",
+      password: 'hola1234',
+      password_confirmation: 'hola1234',
+      phone: '+56 9 12345678',
+      picture: 'default_user.png',
+      )
+    end  
+  
+end
 
-  User.create(
-    name: 'usuario1',
-    email: 'user3@gmail.com',
-    password: 'hola1234',
-    password_confirmation: 'hola1234',
-    phone: '+56 9 12345678',
-    picture: 'image-04.png'
-  )
-
-
-Cook.create(
-  name: 'cocinero 01',
-  email: 'cook01@gmail.com',
-  phone: '+56 9 89786756',
-  address: 'Dirección 123, Providencia',
-  address_region: 'Región Metropolitana',
-  address_commune: 'Providencia',
-  address_city: 'Santiago',
-  picture: 'image-01',
-  biography: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-  vedent, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-  user_id: 3
-)
-
-Cook.create(
-  name: 'cocinero 02',
-  email: 'cook02@gmail.com',
-  phone: '+56 9 45675623',
-  address: 'Dirección 345, Santiago Centro',
-  address_region: 'Región Metropolitana',
-  address_commune: 'Santiago',
-  address_city: 'Santiago',
-  picture: 'image-02',
-  biography: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-  vedent, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-  user_id: 2
-)
-
-Cook.create(
-  name: 'cocinero 03',
-  email: 'cook03@gmail.com',
-  phone: '+56 9 89890098',
-  address: 'Dirección 567, Maipú',
-  address_region: 'Región Metropolitana',
-  address_commune: 'Maipú',
-  address_city: 'Santiago',
-  picture: 'image-03',
-  biography: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-  vedent, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-  user_id: 3
-)
-
-Cook.create(
-  name: 'cocinero 04',
-  email: 'cook03@gmail.com',
-  phone: '+56 9 89890098',
-  address: 'Dirección 567, Maipú',
-  address_region: 'Región Metropolitana',
-  address_commune: 'Maipú',
-  address_city: 'Santiago',
-  picture: 'image-03',
-  biography: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-  vedent, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-  user_id: 2
-)
-
-Cook.create(
-  name: 'cocinero 05',
-  email: 'cook03@gmail.com',
-  phone: '+56 9 89890098',
-  address: 'Dirección 567, Maipú',
-  address_region: 'Región Metropolitana',
-  address_commune: 'Maipú',
-  address_city: 'Santiago',
-  picture: 'image-03',
-  biography: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-  vedent, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-  user_id: 3
-)
-
-Cook.create(
-  name: 'cocinero 06',
-  email: 'cook03@gmail.com',
-  phone: '+56 9 89890098',
-  address: 'Dirección 567, Maipú',
-  address_region: 'Región Metropolitana',
-  address_commune: 'Maipú',
-  address_city: 'Santiago',
-  picture: 'image-03',
-  biography: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-  vedent, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-  user_id: 2
-)
+cont = 1
+2.times do |x|  
+  3.times do |i|
+    Cook.create(
+      name: "cocinero #{i + 1}",
+      email: 'cook01@gmail.com',
+      phone: "56 9 8978675#{i + 1}",
+      address: 'Dirección 123, Providencia',
+      address_region: 'Región Metropolitana',
+      address_commune: 'Providencia',
+      address_city: 'Santiago',
+      picture: "image-0#{x + 1}",
+      biography: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+      vedent, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      ##referencia con el usuario#
+      user_id: cont
+    )
+    cont = cont + 1
+  end
+end
 
 
 3.times do |x|

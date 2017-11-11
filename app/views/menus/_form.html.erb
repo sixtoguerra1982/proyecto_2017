@@ -12,15 +12,16 @@
     </div>
   <% end %>
 
- <h3>Nombre de cocinero: <%= @cook.name %></h3>
+  <h3>Nombre de cocinero: <%= @cook.name %></h3>
   <h3> Menus:</h3>
   <ul>
-    <% @cook.menus.each do |menu| %>
+    <% @menus.each do |menu| %>
       <li>
         <%= menu.name %>
       </li>
     <% end %>
-  </ul>
+  </ul>  
+
 
 
   <div class="field">
@@ -47,13 +48,7 @@
     <%= form.label :date, "Fecha de Venta" %>
     <%= form.date_select :date, id: :menu_date %>
   </div>
-
-  <div class="field">
-    <%= form.label :cook_id, "Cocinero" %>
-    <%= form.text_field :cook_id, id: :cook_id, value: 1 %>
-  </div>
-
-
+  
   <div class="actions">
     <%= form.submit %>
   </div>
