@@ -39,13 +39,13 @@ cont = 1
 2.times do |x|  
   3.times do |i|
     Cook.create(
-      name: "cocinero #{i + 1}",
+      name: Faker::Name.name_with_middle,
       email: 'cook01@gmail.com',
       phone: "56 9 8978675#{i + 1}",
-      address: 'Dirección 123, Providencia',
-      address_region: 'Región Metropolitana',
-      address_commune: 'Providencia',
-      address_city: 'Santiago',
+      address: Faker::Address.street_address + " " + Faker::Address.secondary_address,
+      address_region: Faker::Address.state,
+      address_commune: Faker::Address.community,
+      address_city: Faker::Address.city,
       picture: "image-0#{x + 1}",
       biography: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
       vedent, sunt in culpa qui officia deserunt mollit anim id est laborum.',
